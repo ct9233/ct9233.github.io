@@ -112,3 +112,29 @@ nav a {
     padding: 5px;
     color: black;
 }
+
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.image-container > img {
+    max-width: 90vw;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+section#about {
+    background-color: #202a45;
+}
+
+section#projects {
+    background-color: #2b2146;
+}
+
+section#contact {
+    background-color: #193b3e;
+}

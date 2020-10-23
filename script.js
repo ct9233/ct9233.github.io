@@ -4,6 +4,7 @@ const nav2 = document.getElementById('nav-2');
 const nav3 = document.getElementById('nav-3');
 const navMenu = document.getElementById('menu');
 const navItems = [nav1, nav2, nav3];
+let timer;
 
 function expandMenu() {
     if (nav1.classList.contains('inactive-1')) {
@@ -14,12 +15,13 @@ function expandMenu() {
 
 function retractMenu() {
     if (nav1.classList.contains('active-1')) {
-    setTimeout(() => {
+    timer = setTimeout(() => {
 		navItems.forEach((navItem, i) =>
 		navItem.classList.replace(`active-${i + 1}`, `inactive-${i + 1}`));
-        }, 2500);
+        }, 2000);
     }
 }
 
 menuLogo.addEventListener('mouseover', expandMenu);
 navMenu.addEventListener('mouseleave', retractMenu);
+navMenu.addEventListener('mouseover', () => clearTimeout(timer));

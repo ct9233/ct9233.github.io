@@ -29,7 +29,13 @@ nav li {
     align-items: center;
     font-family: Roboto, sans-serif;
     font-size: 30px;
-    font-weight: 200;
+    font-weight: 300;
+}
+
+nav li:hover {
+    filter: brightness(120%);
+    font-size: 31px;
+    font-weight: 600;
 }
 
 li.logo {
@@ -37,6 +43,11 @@ li.logo {
     font-weight: 600;
     justify-content: left;
     max-width: 150px;
+}
+
+li.logo:hover {
+    filter: brightness(110%);
+    font-weight: 800;
 }
 
 li > i {
@@ -58,6 +69,10 @@ li > i {
 
 #nav-3 {
     background-color: #193b3e;
+}
+
+.first-load {
+    opacity: 0;
 }
 
 .active-1 {

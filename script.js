@@ -10,6 +10,11 @@ function expandMenu() {
     if (nav1.classList.contains('inactive-1')) {
         navItems.forEach((navItem, i) => 
         navItem.classList.replace(`inactive-${i + 1}`, `active-${i + 1}`));
+    } else {
+        navItems.forEach((navItem, i) => {
+        navItem.classList.add(`active-${i + 1}`);
+        navItem.classList.remove('first-load');
+        })
     }
 }
 

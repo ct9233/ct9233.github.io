@@ -1,4 +1,4 @@
-const menuLogo = document.querySelector('.logo');
+const menuLogo = document.getElementById('logo');
 const nav1 = document.getElementById('nav-1');
 const nav2 = document.getElementById('nav-2');
 const nav3 = document.getElementById('nav-3');
@@ -7,6 +7,7 @@ const navItems = [nav1, nav2, nav3];
 let timer;
 
 function expandMenu() {
+    menuLogo.classList.add('logo-active');
     if (nav1.classList.contains('inactive-1')) {
         navItems.forEach((navItem, i) => 
         navItem.classList.replace(`inactive-${i + 1}`, `active-${i + 1}`));
@@ -20,9 +21,10 @@ function expandMenu() {
 
 function retractMenu() {
     if (nav1.classList.contains('active-1')) {
-    timer = setTimeout(() => {
-		navItems.forEach((navItem, i) =>
-		navItem.classList.replace(`active-${i + 1}`, `inactive-${i + 1}`));
+        timer = setTimeout(() => {
+            navItems.forEach((navItem, i) =>
+            navItem.classList.replace(`active-${i + 1}`, `inactive-${i + 1}`));
+            menuLogo.classList.remove('logo-active');
         }, 2000);
     }
 }

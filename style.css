@@ -33,30 +33,29 @@ nav li {
 }
 
 nav li:hover {
-    filter: brightness(120%);
+    filter: brightness(130%);
     font-size: 31px;
     font-weight: 600;
 }
 
-li.logo {
+#logo {
+    cursor: pointer;
     background-color: #4c556d;
     font-weight: 600;
     justify-content: left;
     max-width: 150px;
 }
 
-li.logo:hover {
-    filter: brightness(110%);
-    font-weight: 800;
+.logo-active,
+.logo-active:hover {
+    filter: brightness(105%);
+    font-size: 31px;
+    font-weight: 900;
 }
 
 li > i {
     color: rgba(0, 0, 0, 0.7);
     margin: 0 20px 0 auto;
-}
-
-.fa-bars {
-    cursor: pointer;
 }
 
 #nav-1 {

@@ -10,12 +10,12 @@
 <body>
     <nav>
         <ul id="menu">
-            <li id="logo"><a href="#">CT</a>
+            <li class="logo-pulse" id="logo"><a href="#">CT</a>
                 <i class="fas fa-bars"></i>
             </li>
-            <li class="first-load" id="nav-1"><a href="#about">About</a></li>
-            <li class="first-load" id="nav-2"><a href="#projects">Projects</a></li>
-            <li class="first-load" id="nav-3"><a href="#contact">Contact</a></li>
+            <li class="first-load menu-item" id="nav-1"><a href="#about">About</a></li>
+            <li class="first-load menu-item" id="nav-2"><a href="#projects">Projects</a></li>
+            <li class="first-load menu-item" id="nav-3"><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
@@ -34,19 +34,25 @@
     <section id="contact">
         <h1>Contact Info</h1>
         <div class="contact-container">
-            <span>
-                <i class="fab fa-github"></i>
-                <a class="contact-link" href="https://github.com/ct9233">Github</a>
-            </span>
-            <span>
-                <i class="fab fa-linkedin"></i>
-                <a class="contact-link" href="#">LinkedIn</a>
-            </span>
-            <span>
-                <i class="fas fa-envelope-square"></i>
-                <a class="contact-link" href="#">Email</a>
-            </span>
-        </>
+            <a class="contact-link" href="https://github.com/ct9233">
+                <span>
+                    <i class="fab fa-github"></i>
+                    Github
+                </span>
+            </a>
+            <a class="contact-link" href="#">
+                <span>
+                    <i class="fab fa-linkedin"></i>
+                    LinkedIn
+                </span>
+            </a>
+            <a class="contact-link" href="#">
+                <span>
+                    <i class="fas fa-envelope-square"></i>
+                    E-mail
+                </span>
+            </a>
+        </div>
     </section>
     
     <script src="script.js"></script>

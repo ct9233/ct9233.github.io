@@ -32,6 +32,7 @@ nav li {
 	font-family: Roboto, sans-serif;
 	font-size: 30px;
 	font-weight: 300;
+	border-radius: 2px;
 }
 
 nav li:hover {
@@ -68,14 +69,17 @@ nav a {
 
 #nav-1 {
 	background-color: #202a45;
+	box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.3);
 }
 
 #nav-2 {
 	background-color: #2b2146;
+	box-shadow: 0px 0px 0px 6px rgba(0, 0, 0, 0.3);
 }
 
 #nav-3 {
 	background-color: #193b3e;
+	box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.3);
 }
 
 .menu-item a {
@@ -109,37 +113,41 @@ nav a {
 }
 
 .active-1 {
-	animation: active 0.3s linear 0.6s both;
+	animation: active 0.3s ease-in-out 0.3s both;
 }
 
 .active-2 {
-	animation: active 0.3s linear 0.4s both;
+	animation: active 0.3s ease-in-out 0.5s both;
 }
 
 .active-3 {
-	animation: active 0.3s linear 0.2s both;
+	animation: active 0.3s ease-in-out 0.7s both;
 }
 
 @keyframes active {
 	from {
 		transform: translateX(-400%);
+		opacity: 0;
 	}
-
+	65% {
+		opacity: 0;
+	}
 	to {
 		transform: translateX(0);
+		opacity: 1;
 	}
 }
 
 .inactive-1 {
-	animation: inactive 0.2s linear 0.4s both;
+	animation: inactive 0.2s ease-in 0.7s both;
 }
 
 .inactive-2 {
-	animation: inactive 0.2s linear 0.5s both;
+	animation: inactive 0.2s ease-in 0.6s both;
 }
 
 .inactive-3 {
-	animation: inactive 0.2s linear 0.6s both;
+	animation: inactive 0.2s ease-in 0.5s both;
 }
 
 @keyframes inactive {
@@ -147,7 +155,9 @@ nav a {
 		transform: translateX(0%);
 		opacity: 1;
 	}
-
+	25% {
+		opacity: 0;
+	}
 	to {
 		transform: translateX(-400%);
 		opacity: 0;
@@ -176,9 +186,17 @@ section {
 	font-family: Lato, sans-serif;
 }
 
+.card {
+	background-color: rgba(155, 155, 155, 0.1);
+	margin: 40px 40px 80px;
+	padding: 20px 30px 40px;
+	border-radius: 5px;
+	box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
 #about {
 	background-color: #202a45;
-	height: 200px;
+	height: fit-content;
 }
 
 #projects {

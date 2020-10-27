@@ -7,13 +7,16 @@ const navItems = [nav1, nav2, nav3];
 let expandTimer;
 let borderTimer;
 
+// Expand Nav Menu and Pause Logo Animation
 function expandMenu() {
     menuLogo.classList.add('logo-active');
+    // After Menu Has Been Retracted
     if (nav1.classList.contains('inactive-1')) {
         navItems.forEach((navItem, i) => 
         navItem.classList.replace(`inactive-${i + 1}`, `active-${i + 1}`));
         menuLogo.classList.remove('logo-pulse');
     } else {
+        // First Time After Page Load
         navItems.forEach((navItem, i) => {
         navItem.classList.add(`active-${i + 1}`);
         menuLogo.classList.remove('logo-pulse');
@@ -22,6 +25,7 @@ function expandMenu() {
     }
 }
 
+// Retract Nav Menu and Resume Logo Animation
 function retractMenu() {
     if (nav1.classList.contains('active-1')) {
         expandTimer = setTimeout(() => {
@@ -33,11 +37,13 @@ function retractMenu() {
     }
 }
 
+// Prevent Menu Retraction if cursor returns
 function clearTimers() {
     clearTimeout(expandTimer);
     clearTimeout(borderTimer);
 }
 
+// Substitution in place of plaintext href in HTML
 function sendEmail() {
     const part1 = 'mai';
     const part2 = 'lto:';
@@ -49,6 +55,7 @@ function sendEmail() {
     window.open(`${part1}${part2}${part3}${part4}${part5}${part6}${part7}`);
 }
 
+// Event Listeners
 menuLogo.addEventListener('mouseover', expandMenu);
 navMenu.addEventListener('mouseleave', retractMenu);
 navMenu.addEventListener('mouseover', clearTimers);

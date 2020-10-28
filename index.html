@@ -1,104 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Portfolio Page</title>
-</head>
-<body>
-    <!-- Nav Menu -->
-    <nav>
-        <ul id="menu">
-            <li class="logo-pulse" id="logo"><a>CT</a>
-                <i class="fas fa-bars"></i>
-            </li>
-            <li class="first-load menu-item" id="nav-1"><a href="#about">About</a></li>
-            <li class="first-load menu-item" id="nav-2"><a href="#projects">Projects</a></li>
-            <li class="first-load menu-item" id="nav-3"><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <!-- Splash Image -->
-    <div class="splash-container">
-        <img class="splash-image" src="img/kbfull.png" alt="Keyboard">
-    </div>
-    <!-- Page Sections -->
-    <section id="about">
-        <div class="card">
-            <h1>About Me</h1>
-            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, vel cum. Exercitationem quas fugiat repudiandae, recusandae maiores aliquam! Debitis quia repudiandae repellendus eius excepturi iste distinctio natus in numquam ab!</h5>
-        </div>
-    </section>
-    <section id="projects">
-        <h1>Projects</h1>
-        <div class="project-container">
-            <div class="project">
-                <h3>Example Title</h3>
-                <a href="#"><img src="img/react-restaurant.png" alt="App Image"></a>
-                <a class="project-link" href="#">
-                    <span>
-                        <i class="fab fa-github"></i>
-                        Github Repo
-                    </span>
-                </a>
-            </div>
-            <div class="project">
-                <h3>Example Title</h3>
-                <a href="#"><img src="img/react-restaurant.png" alt="App Image"></a>
-                <a class="project-link" href="#">
-                    <span>
-                        <i class="fab fa-github"></i>
-                        Github Repo
-                    </span>
-                </a>
-            </div>
-            <div class="project">
-                <h3>Example Title</h3>
-                <a href="#"><img src="img/react-restaurant.png" alt="App Image"></a>
-                <a class="project-link" href="#">
-                    <span>
-                        <i class="fab fa-github"></i>
-                        Github Repo
-                    </span>
-                </a>
-            </div>
-            <div class="project">
-                <h3>Example Title</h3>
-                <a href="#"><img src="img/react-restaurant.png" alt="App Image"></a>
-                <a class="project-link" href="#">
-                    <span>
-                        <i class="fab fa-github"></i>
-                        Github Repo
-                    </span>
-                </a>
-            </div>
-        </div>
-    </section>
-    <section id="contact">
-        <h1>Contact Info</h1>
-        <div class="contact-container">
-            <a class="contact-link" href="https://github.com/ct9233">
-                <span>
-                    <i class="fab fa-github"></i>
-                    Github
-                </span>
-            </a>
-            <a class="contact-link" href="#">
-                <span>
-                    <i class="fab fa-linkedin"></i>
-                    LinkedIn
-                </span>
-            </a>
-            <a class="contact-link" onclick="sendEmail();">
-                <span>
-                    <i class="fas fa-envelope-square"></i>
-                    E-mail
-                </span>
-            </a>
-        </div>
-    </section>
-    
-    <script src="script.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>Portfolio Page</title>
+	</head>
+	<body>
+		<!-- Nav Menu -->
+		<nav>
+			<ul id="menu">
+				<li class="logo-pulse" id="logo">
+					<a>CT</a>
+					<i class="fas fa-bars"></i>
+				</li>
+				<li class="first-load menu-item" id="nav-1">
+					<a href="#about">About</a>
+				</li>
+				<li class="first-load menu-item" id="nav-2">
+					<a href="#projects">Projects</a>
+				</li>
+				<li class="first-load menu-item" id="nav-3">
+					<a href="#contact">Contact</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- Splash Image -->
+		<div class="splash-container">
+			<img class="splash-image" src="img/kbfull.png" alt="Keyboard" />
+		</div>
+		<!-- Page Sections -->
+		<section id="about">
+			<div class="card">
+				<h1>About Me</h1>
+				<h5>
+					A software developer passionate about problem-solving at the
+					intersection between technology and communication.
+				</h5>
+				<h3>Technologies</h3>
+				<ul>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>JavaScript</li>
+					<li>Bootstrap</li>
+					<li>React</li>
+					<li>React Native</li>
+					<li>MongoDB</li>
+					<li>Redux</li>
+					<li>Node.js</li>
+					<li>Git</li>
+					<li>GitHub</li>
+					<li>Microsoft Visual Studio Code</li>
+				</ul>
+			</div>
+		</section>
+		<section id="projects">
+			<h1>Projects</h1>
+			<div class="project-container">
+				<div class="project">
+					<h3>Example Title</h3>
+					<a href="#"><img src="img/react-restaurant.png" alt="App Image" /></a>
+					<a class="project-link" href="#">
+						<span>
+							<i class="fab fa-github"></i>
+							Github Repo
+						</span>
+					</a>
+				</div>
+				<div class="project">
+					<h3>Example Title</h3>
+					<a href="#"><img src="img/react-restaurant.png" alt="App Image" /></a>
+					<a class="project-link" href="#">
+						<span>
+							<i class="fab fa-github"></i>
+							Github Repo
+						</span>
+					</a>
+				</div>
+				<div class="project">
+					<h3>Example Title</h3>
+					<a href="#"><img src="img/react-restaurant.png" alt="App Image" /></a>
+					<a class="project-link" href="#">
+						<span>
+							<i class="fab fa-github"></i>
+							Github Repo
+						</span>
+					</a>
+				</div>
+				<div class="project">
+					<h3>Example Title</h3>
+					<a href="#"><img src="img/react-restaurant.png" alt="App Image" /></a>
+					<a class="project-link" href="#">
+						<span>
+							<i class="fab fa-github"></i>
+							Github Repo
+						</span>
+					</a>
+				</div>
+			</div>
+		</section>
+		<section id="contact">
+			<h1>Contact Info</h1>
+			<div class="contact-container">
+				<div class="contact-link">
+					<a href="https://github.com/ct9233">
+						<span>
+							<i class="fab fa-github"></i>
+							Github
+						</span>
+					</a>
+				</div>
+				<div class="contact-link">
+					<a href="https://www.linkedin.com/in/ct9233/">
+						<span>
+							<i class="fab fa-linkedin"></i>
+							LinkedIn
+						</span>
+					</a>
+				</div>
+				<div class="contact-link">
+					<a onclick="sendEmail();">
+						<span>
+							<i class="fas fa-envelope-square"></i>
+							E-mail
+						</span>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<script src="script.js"></script>
+	</body>
 </html>

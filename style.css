@@ -199,19 +199,18 @@ h2 {
 	text-align: center;
 	color: #4c556d;
 	margin-top: 0;
-	animation: 1.6s swingIn .3s ease-in;
+	animation: 1.5s swingIn .3s ease-in both;
 }
 
 @keyframes swingIn {
 	from {
-		transform: scale(.0001);
-		
+		transform: scale(.0001) translateY(-200%);
 		opacity: 0;
 	}
 	75% { opacity: .3; }
 	to {
-		transform: scale(1);
-		
+		transform: scale(1) translateY(0%);
+
 		opacity: 1;
 	}
 }
@@ -257,6 +256,11 @@ h5 {
 
 #about li {
 	margin: 15px;
+	font-size: 18px;
+	font-family: Orbitron, sans-serif;
+	font-weight: 600;
+	padding: 4px;
+	border: 2px solid black;
 }
 
 .card {

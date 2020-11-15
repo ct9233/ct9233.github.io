@@ -272,7 +272,7 @@ h5 {
 }
 
 #projects {
-	background-color: #2b2146;
+	background-color: rgb(43, 33, 70);
 	padding: 80px 0 60px;
 }
 
@@ -296,6 +296,15 @@ h5 {
 	border-radius: 5px;
 	box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
 	max-width: 600px;
+	position: relative;
+}
+
+.overlay {
+	position: absolute;
+	bottom: 40%;
+	left: 25%;
+	width: 50%;
+	background-color: hsl(256, 36%, 40%);
 }
 
 .project h3 {
@@ -340,16 +349,24 @@ h5 {
 	margin: 20px;
 }
 
-.project span:hover {
+.project-link span:hover {
 	font-size: 19px;
 	font-weight: 600;
 	background-color: rgba(155, 155, 155, 0.1);
 }
 
-.project span:active {
+.project-link span:active {
 	background-color: rgba(0, 0, 0, 0.1);
 	font-weight: 400;
 	box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+.overlay span:hover {
+	background-color: hsl(256, 36%, 40%);
+}
+
+.overlay span:active {
+	background-color: hsl(256, 36%, 30%);
 }
 
 #contact {

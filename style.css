@@ -46,7 +46,7 @@ nav li:hover {
 	background-color: #4c556d;
 	font-weight: 600;
 	justify-content: left;
-	max-width: 150px;
+	max-width: 20vw;
 }
 
 .logo-active,

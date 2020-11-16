@@ -55,7 +55,7 @@ function buttonOverlay() {
 		img.addEventListener('mouseout', (e) => { 
             buttonTimer = setTimeout(() => {
             e.target.nextElementSibling.setAttribute('hidden', true)
-            }, 50)
+            }, 100)
         });
     });
     // Maintain button visibility while mouse over

@@ -9,6 +9,7 @@ const projImgs = document.querySelectorAll('.project-image');
 const projBtns = document.querySelectorAll('.overlay');
 let expandTimer;
 let borderTimer;
+let buttonTimer;
 
 // Expand Nav Menu and Pause Logo Animation
 function expandMenu() {
@@ -60,7 +61,7 @@ function buttonOverlay() {
     });
     // Maintain button visibility while mouse over
     projBtns.forEach((btn) => {
-        btn.addEventListener('mouseenter', () => clearTimeout(buttonTimer))
+        btn.addEventListener('mouseenter', () => clearTimeout(buttonTimer));
     })
 }
 

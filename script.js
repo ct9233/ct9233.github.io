@@ -9,7 +9,7 @@ const projImgs = document.querySelectorAll('.project-image');
 const projBtns = document.querySelectorAll('.overlay');
 let expandTimer;
 let borderTimer;
-let buttonTimer;
+let buttonTimer = [];
 
 // Expand Nav Menu and Pause Logo Animation
 function expandMenu() {
@@ -49,19 +49,22 @@ function clearTimers() {
 
 // Display/Hide Button Overlayed on Project Images
 function buttonOverlay() {
-	projImgs.forEach((img) => {
-		img.addEventListener('mouseenter', (e) =>
+	projImgs.forEach((img, i) => {
+		img.addEventListener('mouseenter', (e) => {
+            if (buttonTimer[i]) {
+                clearTimeout(buttonTimer[i]);
+            }
 			e.target.nextElementSibling.removeAttribute('hidden')
-		);
+        });
 		img.addEventListener('mouseout', (e) => { 
-            buttonTimer = setTimeout(() => {
+            buttonTimer[i] = setTimeout(() => {
             e.target.nextElementSibling.setAttribute('hidden', true)
-            }, 100)
+            }, 50)
         });
     });
     // Maintain button visibility while mouse over
-    projBtns.forEach((btn) => {
-        btn.addEventListener('mouseenter', () => clearTimeout(buttonTimer));
+    projBtns.forEach((btn, i) => {
+        btn.addEventListener('mouseover', () => clearTimeout(buttonTimer[i]));
     })
 }
 

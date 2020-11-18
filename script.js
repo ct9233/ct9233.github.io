@@ -50,7 +50,7 @@ function clearTimers() {
 // Display/Hide Button Overlayed on Project Images
 function buttonOverlay() {
 	projImgs.forEach((img, i) => {
-		img.addEventListener('mouseenter', (e) => {
+		img.addEventListener('mouseover', (e) => {
             if (buttonTimer[i]) {
                 clearTimeout(buttonTimer[i]);
             }

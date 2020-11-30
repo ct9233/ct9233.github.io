@@ -351,9 +351,9 @@ h5 {
 }
 
 .project-link span:hover {
-	font-size: 19px;
 	font-weight: 600;
 	background-color: rgba(155, 155, 155, 0.1);
+	letter-spacing: .6pt;
 }
 
 .project-link span:active {
